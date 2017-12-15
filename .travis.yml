@@ -10,7 +10,7 @@ matrix:
       - cd ../..
       script:
       - mv test-ansible.cfg ansible.cfg
-      - ansible-playbook -i "localhost," -c local test.yml
+      - ansible-playbook -i "localhost," -c local test.yml -vvvv
       - cd tests/solidarity
       - npx solidarity
 
