@@ -5,13 +5,11 @@ matrix:
       install:
       - brew uninstall node
       - brew install ansible
-      - cd tests/solidarity
-      - npm install
-      - cd ../..
       script:
       - mv test-ansible.cfg ansible.cfg
       - ansible-playbook -i "localhost," -c local test.yml -vvvv
       - cd tests/solidarity
+      - npm install
       - npx solidarity
 
     # Linux
