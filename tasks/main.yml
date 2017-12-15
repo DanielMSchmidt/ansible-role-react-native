@@ -1,4 +1,7 @@
 ---
 # tasks file for react-native
-- debug:
-    msg: "Starting provisioning"
+
+- name: "Install recent node version"
+  homebrew:
+    name: node
+    state: present
