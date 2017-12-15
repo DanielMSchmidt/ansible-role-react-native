@@ -8,6 +8,7 @@ Requirements
 ------------
 
 There should be none, if you experience any, please file an issue.
+On a operating system level you currently need to have either linux or osx.
 
 Role Variables
 --------------
