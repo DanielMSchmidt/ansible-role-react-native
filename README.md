@@ -1,4 +1,4 @@
-React Native
+React Native [![Build Status](https://travis-ci.org/DanielMSchmidt/ansible-role-react-native.svg?branch=master)](https://travis-ci.org/DanielMSchmidt/ansible-role-react-native)
 =========
 
 This is an ansible role to build the dev setup for a react-native application.
