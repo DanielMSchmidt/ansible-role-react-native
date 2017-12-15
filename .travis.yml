@@ -1,0 +1,12 @@
+matrix:
+  include:
+    # OSX
+    - os: osx
+      install:
+      - brew install node ansible
+      - cd tests/solidarity
+      - npm install
+      script:
+      - npx solidarity
+
+    # Linux
