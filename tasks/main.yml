@@ -1,2 +1,4 @@
 ---
 # tasks file for react-native
+- debug:
+    msg: "Starting provisioning"

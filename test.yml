@@ -1,0 +1,10 @@
+
+---
+- hosts: all
+  connection: local
+
+  roles:
+    - {role: ansible-role-react-native, tags: ansible-role-react-native, when: "ansible_os_family == 'Darwin'"}
+    # ***
+    # Have a look at our roles repository for a hug collection of generic roles
+    # ***

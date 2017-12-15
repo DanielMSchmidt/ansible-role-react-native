@@ -3,10 +3,15 @@ matrix:
     # OSX
     - os: osx
       install:
+      - brew uninstall node
       - brew install ansible
       - cd tests/solidarity
       - npm install
+      - cd ../..
       script:
+      - mv test-ansible.cfg ansible.cfg
+      - ansible-playbook -i "localhost," -c local test.yml
+      - cd tests/solidarity
       - npx solidarity
 
     # Linux
