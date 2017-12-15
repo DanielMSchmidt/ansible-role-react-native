@@ -3,5 +3,5 @@
 
 - name: "Install recent node version"
   homebrew:
-    name: node
+    name: node@8
     state: present
