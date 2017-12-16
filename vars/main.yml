@@ -1,2 +1,4 @@
 ---
 # vars file for react-native
+
+node_version: 9.3.0

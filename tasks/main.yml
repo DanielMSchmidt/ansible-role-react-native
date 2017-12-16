@@ -1,7 +1,23 @@
 ---
-# tasks file for react-native
-
-- name: "Install recent node version"
+- name: "Install nvm version"
   homebrew:
-    name: node@8
+    name: nvm
+    update_homebrew: yes
     state: present
+
+# Config Tasks for bash
+- name: "Add bash config for nvm"
+  blockinfile:
+    path: ~/.bash_profile
+    block: |
+      export NVM_DIR=$HOME/.nvm
+      source $(brew --prefix nvm)/nvm.sh
+
+- name: "Source bash_profile"
+  shell: "source ~/.bash_profile"
+
+# Config Tasks for fish
+
+# Install recent node version
+- name: "Install node"
+  shell: "nvm install {{ node_version }} && nvm alias default {{ node_version }}"

@@ -3,11 +3,21 @@ matrix:
     # OSX
     - os: osx
       install:
+      - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      - rm ~/.bash_profile && cp test-bash-profile ~/.bash_profile && source ~/.bash_profile
       - brew uninstall node
       - brew install ansible
       script:
       - mv test-ansible.cfg ansible.cfg
       - ansible-playbook -i "localhost," -c local test.yml -vvvv
+
+      # just for testing
+      - cat ~/.bash_profile
+      - source ~/.bash_profile
+      - echo $NVM_DIR
+      - which nvm
+      - node -v
+
       - cd tests/solidarity
       - npm install
       - npx solidarity
