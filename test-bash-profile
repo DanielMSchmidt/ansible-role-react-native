@@ -1,3 +1,91 @@
 # Mine
-# load .profile
+
+export DOTBASHPROFILE_LOADED=1
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
+source /Users/vagrant/.bash_profile
+export DOTBASHPROFILE_LOADED=1
+DOTBASHPROFILE_LOADED=1
+[[ -s /Users/vagrant/.profile ]]
+source /Users/vagrant/.profile
+export DOTPROFILE_LOADED=1
+DOTPROFILE_LOADED=1
+[[ -s /Users/vagrant/.bashrc ]]
+source /Users/vagrant/.bashrc
+export DOTBASHRC_LOADED=1
+DOTBASHRC_LOADED=1
+export 'PATH=/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx'
+PATH='/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx'
+export LC_ALL=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
+export HOMEBREW_NO_AUTO_UPDATE=1
+HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_ANALYTICS=1
+HOMEBREW_NO_ANALYTICS=1
+export 'PATH=/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin'
+PATH='/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin'
+export GOPATH=/Users/vagrant/go
+GOPATH=/Users/vagrant/go
+export 'PATH=/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin'
+PATH='/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin'
+'[' -s /Users/vagrant/.profiles/bitrise_profile ']'
+source /Users/vagrant/.profiles/bitrise_profile
+export DOT_BITRISE_PROFILE_LOADED=1
+DOT_BITRISE_PROFILE_LOADED=1
+export BITRISE_OSX_STACK_REV_ID=v2017_11_14_1
+BITRISE_OSX_STACK_REV_ID=v2017_11_14_1
+export BITRISE_SOURCE_DIR=/Users/vagrant/git
+BITRISE_SOURCE_DIR=/Users/vagrant/git
+export BITRISE_STEP_DIR=/Users/vagrant/stepdir
+BITRISE_STEP_DIR=/Users/vagrant/stepdir
+export BITRISE_DEPLOY_DIR=/Users/vagrant/deploy
+BITRISE_DEPLOY_DIR=/Users/vagrant/deploy
+export 'BITRISE_LIBRARY_DIR=/Users/vagrant/Library/MobileDevice/Provisioning Profiles'
+BITRISE_LIBRARY_DIR='/Users/vagrant/Library/MobileDevice/Provisioning Profiles'
+export BITRISE_PROFILE_DIR=/Users/vagrant/profiles
+BITRISE_PROFILE_DIR=/Users/vagrant/profiles
+export BITRISE_SYM_ROOT=/Users/vagrant/build
+BITRISE_SYM_ROOT=/Users/vagrant/build
+export BITRISE_OBJ_ROOT=/Users/vagrant/bin
+BITRISE_OBJ_ROOT=/Users/vagrant/bin
+export BITRISE_KEYCHAIN=bitrise.keychain
+BITRISE_KEYCHAIN=bitrise.keychain
+export BITRISE_KEYCHAIN_PASSWORD=vagrant
+BITRISE_KEYCHAIN_PASSWORD=vagrant
+export BITRISE_FOLDER_PATH=/Users/vagrant/bitrise
+BITRISE_FOLDER_PATH=/Users/vagrant/bitrise
+export BITRISE_STEP_DATA_FOLDER_PATH=/Users/vagrant/bitrise/stepdata
+BITRISE_STEP_DATA_FOLDER_PATH=/Users/vagrant/bitrise/stepdata
+export BITRISE_STEP_FORMATTED_OUTPUT_FILE_PATH=/Users/vagrant/bitrise/stepdata/stepoutput
+BITRISE_STEP_FORMATTED_OUTPUT_FILE_PATH=/Users/vagrant/bitrise/stepdata/stepoutput
+export BITRISE_TOOLS_FOLDER_PATH=/Users/vagrant/bitrise/tools
+BITRISE_TOOLS_FOLDER_PATH=/Users/vagrant/bitrise/tools
+export BITRISE_TOOLS_CMD_BRIDGE_PATH=/usr/local/bin/cmd-bridge
+BITRISE_TOOLS_CMD_BRIDGE_PATH=/usr/local/bin/cmd-bridge
+export 'PATH=/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx'
+PATH='/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx'
+export BITRISE_BRIDGE_WORKDIR=/Users/vagrant/git
+BITRISE_BRIDGE_WORKDIR=/Users/vagrant/git
+export CI=true
+CI=true
+export BITRISE_IO=true
+BITRISE_IO=true
+'[' -s /Users/vagrant/.profiles/tools_profile ']'
+source /Users/vagrant/.profiles/tools_profile
+export MATCH_KEYCHAIN_PASSWORD=vagrant
+MATCH_KEYCHAIN_PASSWORD=vagrant
+'[' -s /Users/vagrant/.profiles/xamarin_profile ']'
+echo '[ $# -gt 0 ] && echo $1'
+. /dev/stdin yes
+'[' _yes = _yes ']'
+'[' 0 -ne 0 ']'
+local VERSION
+'[' _use = _install ']'
+'[' _use = _use ']'
+command printf '%s\n' ''
+VERSION=
+'[' -n '' ']'
+
