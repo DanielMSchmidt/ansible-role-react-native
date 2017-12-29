@@ -4,4 +4,4 @@
   connection: local
 
   roles:
-    - ansible-role-react-native
+    - react-native
