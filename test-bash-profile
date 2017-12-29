@@ -31,8 +31,6 @@ export GOPATH=/Users/vagrant/go
 GOPATH=/Users/vagrant/go
 export 'PATH=/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin'
 PATH='/usr/local/bin:/usr/local/sbin:~/bin:/Users/vagrant/.bitrise/tools:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin:/Users/vagrant/bitrise/tools/cmd-bridge/bin/osx:/usr/local/opt/go/libexec/bin:/Users/vagrant/go/bin'
-'[' -s /Users/vagrant/.profiles/bitrise_profile ']'
-source /Users/vagrant/.profiles/bitrise_profile
 export DOT_BITRISE_PROFILE_LOADED=1
 DOT_BITRISE_PROFILE_LOADED=1
 export BITRISE_OSX_STACK_REV_ID=v2017_11_14_1
@@ -73,19 +71,4 @@ export CI=true
 CI=true
 export BITRISE_IO=true
 BITRISE_IO=true
-'[' -s /Users/vagrant/.profiles/tools_profile ']'
-source /Users/vagrant/.profiles/tools_profile
-export MATCH_KEYCHAIN_PASSWORD=vagrant
-MATCH_KEYCHAIN_PASSWORD=vagrant
-'[' -s /Users/vagrant/.profiles/xamarin_profile ']'
-echo '[ $# -gt 0 ] && echo $1'
-. /dev/stdin yes
-'[' _yes = _yes ']'
-'[' 0 -ne 0 ']'
-local VERSION
-'[' _use = _install ']'
-'[' _use = _use ']'
-command printf '%s\n' ''
-VERSION=
-'[' -n '' ']'
 
