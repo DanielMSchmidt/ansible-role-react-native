@@ -15,11 +15,13 @@
       # This loads nvm
       [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
-- name: "Source bash_profile"
-  shell: "source ~/.bash_profile"
+
+# Source Bash Profile
+#- name: "Source bash_profile"
+#  shell: "source ~/.bash_profile"
 
 # Config Tasks for fish
 
 # Install recent node version
-- name: "Install node"
-  shell: "nvm install {{ node_version }} && nvm alias default {{ node_version }}"
+# - name: "Install node"
+#  shell: "nvm install {{ node_version }} && nvm alias default {{ node_version }}"
