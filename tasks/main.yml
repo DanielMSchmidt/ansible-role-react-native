@@ -12,6 +12,8 @@
     block: |
       export NVM_DIR=$HOME/.nvm
       source $(brew --prefix nvm)/nvm.sh
+      # This loads nvm
+      [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
 - name: "Source bash_profile"
   shell: "source ~/.bash_profile"
