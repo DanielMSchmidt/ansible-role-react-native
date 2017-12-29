@@ -1,27 +1,7 @@
 ---
-- name: "Install nvm version"
+# Install recent node version
+- name: "Install node"
   homebrew:
-    name: nvm
+    name: node@8
     update_homebrew: yes
     state: present
-
-# Config Tasks for bash
-- name: "Add bash config for nvm"
-  blockinfile:
-    path: ~/.bash_profile
-    block: |
-      export NVM_DIR=$HOME/.nvm
-      source $(brew --prefix nvm)/nvm.sh
-      # This loads nvm
-      [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
-
-
-# Source Bash Profile
-#- name: "Source bash_profile"
-#  shell: "source ~/.bash_profile"
-
-# Config Tasks for fish
-
-# Install recent node version
-# - name: "Install node"
-#  shell: "nvm install {{ node_version }} && nvm alias default {{ node_version }}"
