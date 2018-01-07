@@ -1,0 +1,16 @@
+matrix:
+  include:
+    # OSX
+    - os: osx
+      install:
+      - brew tap caskroom/cask
+      - brew cask install vagrant virtualbox
+      - vagrant up
+      - vagrant ssh -c "sudo easy_install pip && sudo pip install ansible"
+      script:
+      - vagrant ssh -c "cd ~/vagrant/react-native && mv test-ansible.cfg ../ansible.cfg"
+      - vagrant ssh -c "cd ~/vagrant/react-native && mv test.yml ../test.yml"
+      - vagrant ssh -c "cd ~/vagrant && ansible-playbook -i 'localhost,' -c local test.yml -vvvv"
+      - vagrant ssh -c "cd ~/vagrant/react-native/tests/solidarity && npm install && npx solidarity"
+
+    # Linux

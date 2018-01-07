@@ -1,7 +1,16 @@
 ---
-# Install recent node version
-- name: "Install node"
+- name: Install homebrew
+  shell: 'yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' 
+  args:
+    creates: /usr/local/bin/brew
+
+- name: Update homebrew
   homebrew:
-    name: node@8
+    state: latest
+    update_homebrew: yes
+
+- name: Install node
+  homebrew:
+    name: node
     update_homebrew: yes
     state: present
