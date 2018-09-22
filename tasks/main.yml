@@ -19,3 +19,12 @@
     name: node
     update_homebrew: yes
     state: present
+
+- name: Install watchman
+  homebrew:
+    name: watchman
+    state: present
+
+- name: Install react-native CLI
+  npm:
+    name: react-native
