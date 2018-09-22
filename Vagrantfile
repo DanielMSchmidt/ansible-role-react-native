@@ -2,13 +2,13 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "jhcook/osx-yosemite-10.10"
+  config.vm.box = "jhcook/macos-sierra"
 
   config.vm.synced_folder ".", "/vagrant", :disabled => true
 
   config.vm.provider "virtualbox" do |vb|
     # Fix "hfs mounted macintosh hd on device root_device" issue
-    vb.customize ["modifyvm", :id, "--cpus", "1"]
+    vb.cpus = 1
     vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]
 
     # Some more hacks for device recognition
