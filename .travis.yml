@@ -9,7 +9,7 @@ matrix:
       - cp test.yml ../test.yml
       - cd ../
       - mv ansible-role-react-native react-native
-      - ls -la
       - ansible-playbook -i 'localhost,' -c local test.yml -vvvv
+      - cd react-native/tests/solidarity && npm install && npx solidarity
 
     # Linux
