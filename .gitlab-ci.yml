@@ -1,0 +1,12 @@
+before_script:
+  - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  - brew install ansible
+  - cp test-ansible.cfg ../ansible.cfg
+  - cp test.yml ../test.yml
+  - cd ..
+
+ansible:
+  - ls -la
+  - ansible-playbook -i 'localhost,' -c local test.yml -vvvv
+  - cd ./react-native/tests/solidarity && npm install && npm test
+  
