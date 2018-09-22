@@ -4,4 +4,6 @@
   connection: local
 
   roles:
-    - react-native
+    - role: react-native
+      shells:
+        - bash

@@ -13,6 +13,7 @@
   lineinfile:
     path: ~/.bashrc
     line: 'export PATH="/usr/local/bin:$PATH"'
+  when: bash in shells
 
 - name: Install node
   homebrew:
