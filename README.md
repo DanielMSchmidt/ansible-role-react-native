@@ -10,7 +10,7 @@ On a operating system level you currently need to have either linux or osx.
 
 ## Role Variables
 
-- shells: the list of shells you want the environment variables to be set at. It defaults to `bash` and `fish` and it skips each shell it can't find. The supported shells are: `bash`, `fish`
+- shells: the list of shells you want the environment variables to be set at. It defaults to `bash` and `fish` and it skips each shell it can't find. The supported shells are: `bash`
 
 ## Dependencies
 
