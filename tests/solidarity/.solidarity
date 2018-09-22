@@ -23,8 +23,7 @@
       {
         "rule": "cli",
         "binary": "react-native",
-        "semver": "0.0.0",
-        "line": 2
+        "semver": ">= 0.0.0",
       }
     ],
     "NPM": [
