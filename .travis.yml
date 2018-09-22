@@ -3,7 +3,8 @@ matrix:
     # OSX
     - os: osx
       install:
-      - brew install ansible node
+      - brew install ansible 
+      - brew upgrade node
       script:
       - cp test-ansible.cfg ../ansible.cfg
       - cp test.yml ../test.yml
