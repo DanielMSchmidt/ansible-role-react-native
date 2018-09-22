@@ -22,14 +22,12 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: local
       roles:
-         - { role: danielmschmdit.ansible-role-react-native, shells: ['fish', 'bash'] }
+         - { role: danielmschmdit.ansible-role-react-native, shells: ['bash'] }
 
 ## Running a Test
 
-- vagrant ssh -c "cd ~/vagrant/react-native && mv test-ansible.cfg ../ansible.cfg"
-- vagrant ssh -c "cd ~/vagrant/react-native && mv test.yml ../test.yml"
-- vagrant ssh -c "cd ~/vagrant && ansible-playbook -i 'localhost,' -c local test.yml -vvvv"
-- vagrant ssh -c "cd ~/vagrant/react-native/tests/solidarity && npm install && npx solidarity"
+- `vagrant up && vagrant ssh`
+- `./vagrant/react-native/runVagrantTest.sh`
 
 ## License
 
