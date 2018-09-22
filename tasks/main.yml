@@ -11,7 +11,7 @@
 
 - name: Enable homebrew binaries
   lineinfile:
-    path: ~/.bash_profile
+    path: ~/.bashrc
     line: 'export PATH="/usr/local/bin:$PATH"'
 
 - name: Install node
