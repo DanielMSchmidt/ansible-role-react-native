@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "solidarity"
+  },
   "devDependencies": {
     "solidarity": "^1.1.0",
     "solidarity-react-native": "^1.0.0"
