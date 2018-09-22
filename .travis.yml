@@ -5,6 +5,7 @@ matrix:
       install:
       - brew install ansible
       script:
+      - mv test-ansible.cfg ansible.cfg
       - ansible-playbook -i 'localhost,' -c local test.yml -vvvv
 
     # Linux
