@@ -5,9 +5,10 @@ matrix:
       install:
       - brew install ansible
       script:
-      - mv test-ansible.cfg ../ansible.cfg
-      - mv test.yml ../test.yml
+      - cp test-ansible.cfg ../ansible.cfg
+      - cp test.yml ../test.yml
       - cd ../
+      - mv ansible-role-react-native react-native
       - ls -la
       - ansible-playbook -i 'localhost,' -c local test.yml -vvvv
 
