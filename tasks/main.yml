@@ -33,5 +33,5 @@
 
 - name: Install react-native CLI
   npm:
-    name: react-native
+    name: react-native-cli
     global: yes
