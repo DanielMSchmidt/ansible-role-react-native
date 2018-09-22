@@ -28,3 +28,4 @@
 - name: Install react-native CLI
   npm:
     name: react-native
+    global: yes
