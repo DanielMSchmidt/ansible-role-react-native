@@ -10,3 +10,7 @@ ansible:
     - ls -la
     - ansible-playbook -i 'localhost,' -c local test.yml -vvvv
     - cd ./react-native/tests/solidarity && npm install && npm test
+  tags:
+    - ios_9-2
+    - xcode_7-2
+    - osx_10-11
