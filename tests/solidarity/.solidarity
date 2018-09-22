@@ -33,14 +33,6 @@
         "binary": "npm",
         "semver": ">= 5.0.0"
       }
-    ],
-    "Yarn": [
-      {
-        "rule": "cli",
-        "binary": "yarn",
-        "version": "--version",
-        "semver": ">= 1.0.0"
-      }
     ]
   }
 }
