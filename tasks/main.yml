@@ -9,6 +9,11 @@
     state: latest
     update_homebrew: yes
 
+- name: Enable homebrew binaries
+  lineinfile:
+    path: ~/.bash_profile
+    line: 'export PATH="/usr/local/bin:$PATH"'
+
 - name: Install node
   homebrew:
     name: node
