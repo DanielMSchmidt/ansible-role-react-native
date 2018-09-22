@@ -6,7 +6,7 @@ before_script:
   - cd ..
 
 ansible:
-  - ls -la
-  - ansible-playbook -i 'localhost,' -c local test.yml -vvvv
-  - cd ./react-native/tests/solidarity && npm install && npm test
-  
+  script:
+    - ls -la
+    - ansible-playbook -i 'localhost,' -c local test.yml -vvvv
+    - cd ./react-native/tests/solidarity && npm install && npm test
