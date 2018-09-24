@@ -21,6 +21,7 @@
   when: '"bash" in shells'
 
 - name: Install node
+  become: yes
   homebrew:
     name: node
     update_homebrew: yes
