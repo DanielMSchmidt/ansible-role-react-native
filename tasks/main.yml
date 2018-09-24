@@ -24,7 +24,7 @@
   homebrew:
     name: node
     update_homebrew: yes
-    state: present
+    state: latest
 
 - name: Install watchman
   homebrew:
